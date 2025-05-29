@@ -3,3 +3,7 @@
 body{
     background: white;
 }
+
+.the-domains {
+    list-style-type: none
+}

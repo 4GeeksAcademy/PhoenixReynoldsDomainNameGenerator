@@ -13,15 +13,14 @@ window.onload = function () {
   let noun = ['finger', 'beaver', 'granny',];
   let extension = ['.com', '.net', '.xxx', '.tv']
 
-  for (let elm of pronoun) {
-    for (let elm2 of adj) {
-      for (let elm3 of noun) {
-        for (let elm4 of extension) {
-          let result = elm + elm2 + elm3 + elm4
-          console.log(result)
-          document.querySelector('#the-domains').innerHTML += "<li>" + result + "</li"
-        }
-      }
+  for (let iPronoun = 0; iPronoun < pronoun.length; iPronoun++) {
+  for (let iAdj = 0; iAdj < adj.length; iAdj++) {
+  for (let iNoun = 0; iNoun < noun.length; iNoun++) {
+    for (let iExt = 0; iExt < extension.length; iExt++) {
+      let result = pronoun[iPronoun] + adj[iAdj] + noun[iNoun] + extension[iExt];
+      console.log( result );
     }
   }
+}
+}
 };
